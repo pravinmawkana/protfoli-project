@@ -8,6 +8,9 @@ body {
 .logo {
   width: 16.25rem;
 }
+nav {
+  z-index: 2;
+}
 nav a.nav-link {
   /* font-weight: 500; */
   letter-spacing: 0.0375rem;
@@ -35,3 +38,67 @@ nav ul li {
 .navbar-nav > li > a:hover {
   border-top: 0.1876rem solid darkblue !important;
 }
+
+.header-wraper {
+  position: relative;
+  background: url(laptop.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed' sans-serif;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: orange;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.5rem !;
+  }
+  .typed-text {
+    font-size: 1rem !important;
+  }
+  .navbar-nav {
+    /* width: 7rem; */
+  }
+}
+.typed-text {
+  font-size: 2rem;
+  color: white;
+}
+.btn-main-offer {
+  border: 1px solid red;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: white;
+  margin: 2rem;
+}
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: tomato;
+  color: aliceblue;
+  transition: 0.2s easy-in-out;
+}
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
+}
+
+@media (max-width);
